@@ -343,6 +343,8 @@ header a:hover::after {
     margin: 0 auto;
 }
 
+/* Container 4 */
+
 .container4 {
     display: flex;
     flex-direction: column;
@@ -361,6 +363,11 @@ header a:hover::after {
     align-items: center;
     text-transform: uppercase;
     margin: 50px auto;
+}
+.cont4-top h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 /* Flex container for images */
 .cont4-imgs {
@@ -399,13 +406,6 @@ header a:hover::after {
   transition: height 0.6s ease-in-out; 
 }
 
-.caption-block {
-  transform: translateY(0);                    /* hidden by default */
-  transition: transform 0.6s ease-in-out, 
-              opacity 0.6s ease-in-out;
-}
-
-
 
 /* Always-visible line */
 .caption-text {
@@ -434,9 +434,171 @@ header a:hover::after {
   height: 180px;  /* 24px (caption) + 20px (more-text’s line-height) */
 }
 
+/* Container 5 */
+.container5 {
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
 
+.cont5-top {
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+.cont5-top h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.cont5-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 600px;
+    background-color: #FFF5EB;
+    margin: 0 auto;
+    column-gap: 50px;
 
+}
+.bottom-left {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
 
+ 
+}
+.date {
+    align-self: flex-end;
+    text-align: right;
+    padding-top: 50px;
+}
+.cont5-text {
+    text-align: left;
+    margin-top: -50px;
+}
+
+.upcoming {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 8%;
+    background: linear-gradient(90deg, #A54E2B, #DC9853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  align-items: start;
+}
+.cont5-text h5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-top: -20px;
+}
+.light1 {
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-top: -20px;
+}
+.bottom-right {
+   width: 80%;
+   height: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   object-fit: cover;
+   }
+.bottom-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont5-daa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0 auto;
+}
+.daa-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    line-height: 0%;
+    margin-top: -50px;
+    padding-left: 20px;
+}
+.daa-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    line-height: 0%;
+    margin-top: -50px;
+    padding-left: 20px;
+}
+.daa-text {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0%;
+}
+.daa-top .daa-text {
+    font-size: 16px;
+    letter-spacing: 0%;
+    margin-top: 40px;
+    opacity: 70%;
+}
+.daa-bottom .daa-text {
+    font-size: 16px;
+    letter-spacing: 0%;
+    opacity: 70%;
+    margin-top: 40px;
+}
+.cont5-btn {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+.cont5-button {
+    background-color: black;
+    color: #FFD2A4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-justify: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 20px;
+    border-radius: 12px;
+    width: 180px;
+    height: 56px;
+    text-transform: uppercase;
+}
+.container5 .cont5-button:hover {
+    background-color: #FFD2A4; 
+    color: black;
+    transform: scale(1.05);     
+    transition: all 0.3s ease-in-out;
 </style>
 <body>
     <header>
@@ -464,7 +626,7 @@ header a:hover::after {
     <!-- Container 1 -->
     <div class="container1">
         <div class="container1-text1">
-             <h6>WELCOME TO OUR CHURCH</h6>
+             <h5>WELCOME TO OUR CHURCH</h5>
             <p><h1>BECOME A PART OF <br>
                  OUR COMMUNITY</h1></p>
                  <button class="container1-btn">LEARN MORE</button>
@@ -478,7 +640,7 @@ header a:hover::after {
     <!-- Container 2 -->
      <div class="container2">
         <div class="container2-top">
-            <h6>sub headline</h6>
+            <h5>sub headline</h5>
             <p><h2>a church that's relevant</h2></p>
         </div>
         <div class="container2-bottom">
@@ -513,7 +675,7 @@ header a:hover::after {
      <div class="container3">
         <div class="container3-top">
             <span class="capital">
-                <h6>sub headline</h6>
+                <h5>sub headline</h5>
                 <p><h2>love and compassion</h2></p>
             </span>
             <h6 class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
@@ -530,8 +692,8 @@ header a:hover::after {
             </div>
             <div class="cont3-text">
                 <span class="capital">
-                    <h6>our mission & vision</h6>
-                    <h4>celebrate with us</h4>
+                    <h5>our mission & vision</h5>
+                    <h3>celebrate with us</h3>
                 </span>
                 <h6 class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
                     incididunt ut labore et dolore magna aliqua.</h6>
@@ -592,22 +754,71 @@ header a:hover::after {
         </div>
         </div>
 
-        <div class="cont4-item">
-        <img src="cont4-img4.png" alt="" class="cont4-img">
-        <div class="caption-wrapper">
-            <div class="caption-block">
-            <div class="caption-text">watch and listen to <br>
+            <div class="cont4-item">
+                <img src="cont4-img4.png" alt="" class="cont4-img">
+                <div class="caption-wrapper">
+                    <div class="caption-block">
+                        <div class="caption-text">watch and listen to <br>
                                         our sermons</div><br>
-            <div class="more-text">Lorem ipsum dolor sit amet,<br>
+                            <div class="more-text">Lorem ipsum dolor sit amet,<br>
                                     consectetur adipiscing elit, sed do <br>
                                     eiusmod tempor incididunt ut.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
-    </div>
-</div>
 
+    <!-- Container 5-->
+        <div class="container5">
+            <div class="cont5-top">
+                <h6>upcoming sermons</h6>
+                <h2>join us and become a part <br>
+                    of something great</h2>
+            </div>
+            <div class="cont5-bottom">
+                <div class="bottom-left">
+                    <div class="date">20 <br>
+                        <span class="july">JULY</span>
+                    </div>
+                    <div class="cont5-text">
+                        <h6><span class="upcoming">upcoming event</span></h6>
+                        <h5>watch and listen <br> to our sermons</h5>
+                        <h6 class="light1">Lorem ipsum dolor sit amet, consectetur <br>
+                             adipiscing elit, sed do eiusmod tempor.</h6>
+                    </div>
+                    <div class="cont5-daa">
+                        <div class="daa-top">
+                            <div><img src="Clock icon.svg" alt=""></div>
+                            <div class="daa-text">
+                                  <h6>Friday 23:39 IST</h6>
+                                  <h6>Saturday 11:20 ISD</h6>
+                            </div>
+                        </div>
+                        <div class="daa-bottom">
+                            <div><img src="Search icon.svg" alt=""></div>
+                                    <div class="daa-text">
+                                        <h6>No 233 Main St. New York</h6>
+                                        <h6>United States</h6>
+                                    </div>
+                                    
+                </div>
+                                </div>
+                                <div class="cont5-btn">
+                                        <button class="cont5-button">
+                                            register
+                                        </button>
+                             </div>
+                        </div>
+                            <div class="bottom-right">
+                                    <img src="cont5-img.png" alt="">
+                            </div>
+                
+                        </div>
+        </div>
+                    
+        
 
 </body>
 </html>
