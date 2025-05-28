@@ -28,22 +28,32 @@
     h1 {
         font-size: 64px;
     }
-
+    /* Header */
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px 0;
     background-color: #0D0D0D;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-}
 
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+}
 .header-left {
     display: flex;
     align-items: center;
     column-gap: 80px;
-    max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
 }
 
 .header a {
@@ -61,7 +71,7 @@
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    border-left: solid white 1px rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
     height: 80px;
     padding-left: 50px;
     }
@@ -75,13 +85,153 @@
         border: none;
         padding: 10px 20px;
         font-size: 16px;
+        font-weight: 400px;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-justify: center;
+        text-align: center;
         cursor: pointer;
+        padding: 20px 20px;
+        border-radius: 10px;
+        width: 180px;
+        height: 56px;
+        text-transform: uppercase;
+
     }
+
+    header a:hover {
+  text-decoration: underline;
+  color: #FFD2A4;
+}
+
+/* Container 1 */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(header-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container1-text1 {
+    margin: 50px auto;
+    width: 100%;
+    padding: 0 100px;
+
+}
+
+.container1-btn {
+    background-color: #FFD2A4;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-justify: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 180px;
+    height: 56px;
+    text-transform: uppercase;
+
+}
+.container1-text2 {
+    margin: 0 auto 100px;
+    width: 100%;
+    padding: 0 100px;
+    font-size: 16px;
+    line-height: 24px;
+   
+}
+
+/* Container 2 */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container2-top {
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+.container2-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    column-gap: 20px;
+
+}
+
+.wwd{
+    background-color: #FFF5EB;
+    padding: 55px;
+    width: 411px;
+    border-bottom: #FFD2A4 15px solid;
+}
+
+.wwd h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.wwd h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.read-more {
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.read-more::after{
+  content: '➔';      /* Unicode arrow (you can swap for ‘→’ or any icon) */
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 1rem;
+  
+  transition: transform 0.2s ease;
+}
+
+.read-more:hover {
+  color: #FFD2A4;
+}
+
+.read-more:hover::before {
+  transform: translateX(4px); /* arrow “slides” on hover */
+}
+
 </style>
 <body>
     <header>
+        <div class="header-wrap">
+            
+        </div>
         <div class="header">
-            <div class="header-left">
+            <div class="header-wrap">
+                <div class="header-left">
                <img src="Logo.png" alt="" class="logo">
             <div class="header-links">
                 <a href="" class="header-nav">Home</a>
@@ -94,6 +244,7 @@
             <div class="header-button">
                 <button class="contact-us">Contact us</button>
             </div>
+            </div>
         </div>
     </header>
     <!-- Container 1 -->
@@ -105,12 +256,76 @@
                  <button class="container1-btn">LEARN MORE</button>
         </div>
         <div class="container1-text2">
-            Lorem ipsum dolor sit amet, consectetur <br>
+            <span style="color: #FFD2A4;">&#8212;</span>Lorem ipsum dolor sit amet, consectetur <br>
             adipiscing elit, sed do.
         </div>
     </div>
-    
 
+    <!-- Container 2 -->
+     <div class="container2">
+        <div class="container2-top">
+            <h6>sub headline</h6>
+            <p><h2>a church that's relevant</h2></p>
+        </div>
+        <div class="container2-bottom">
+            <div class="wwd">
+                <img src="Icon 1.svg" alt="" class="cont2-img">
+                <h4>about us</h4>
+                <p><h6>Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit, sed do <br>
+                        eiusmod tempor incididunt ut labore et <br>
+                        dolore magna aliqua.</h6></p>
+            </div>
+            <div class="wwd">
+                <img src="Icon 2.svg" alt="" class="cont2-img">
+                <h4>get involved</h4>
+                <p><h6>Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit, sed do <br>
+                        eiusmod tempor incididunt ut labore et <br>
+                        dolore magna aliqua.</h6></p>
+            </div>
+            <div class="wwd">
+                <img src="Icon 3.svg" alt="" class="cont2-img">
+                <h4>giving back</h4>
+                <p><h6>Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit, sed do <br>
+                        eiusmod tempor incididunt ut labore et <br>
+                        dolore magna aliqua.</h6></p>
+            </div>
+        </div>
+     </div>    
+
+    <!-- Container 3 -->
+     <div class="container3">
+        <div class="container3-top">
+            <span >
+                <h6>sub headline</h6>
+                <p><h2>love and compassion</h2></p>
+            </span>
+            <br>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br>
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </h6>
+            <button class="cont3-btn">read more</button>
+        </div>
+        <div class="container3-bottom">
+            <div class="cont3-imgs">
+                <img src="" alt="" class="cont3-img">
+                <img src="" alt="" class="cont3-img">
+                <img src="" alt="" class="cont3-img">
+            </div>
+            <div class="cont3-text">
+                <span class="capital">
+                    <h6>our mission & vision</h6>
+                    <p><h4>celebrate with us</h4></p>
+                </span>
+                <p><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+                    incididunt ut labore et dolore magna aliqua.</h6></p>
+            </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+     </div>
 
 
 </body>
