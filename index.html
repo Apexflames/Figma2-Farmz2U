@@ -599,37 +599,131 @@ header a:hover::after {
     color: black;
     transform: scale(1.05);     
     transition: all 0.3s ease-in-out;
+    }
+.view {
+    align-items: center;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Container 6 */
+.container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+    height: 750px;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-image: linear-gradient(
+      0deg,
+      rgba(205, 84, 35, 0.4),
+      rgba(255, 208, 160, 1)
+    ),
+    url('Container6-background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-blend-mode: soft-light;
+
+}
+.cont6-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 1200px;
+    padding: 50px 0px;
+    background-color: white;
+    column-gap: 50px;
+    margin: 0 auto;
+    border-bottom: solid 20px #FFD2A4;
+    }
+.div-left {
+    width: 100%;
+    padding: 0px 70px 50px;
+}
+.div-left h4 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+}
+.div-left h6 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-top: -30px;
+}
+.div-left .visit-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+}
+.visit{
+    background-color: #FFD2A4;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-justify: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 180px;
+    height: 56px;
+    text-transform: uppercase;
+}
+.div-right {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 70px;
+}
 </style>
-<body>
+<body>   
     <header>
-        <div class="header-wrap">
-            
-        </div>
         <div class="header">
             <div class="header-wrap">
                 <div class="header-left">
-               <img src="Logo.png" alt="" class="logo">
-            <div class="header-links">
-                <a href="" class="header-nav">Home</a>
-                <a href="" class="headernav">About us</a>
-                <a href="" class="headernav">Sermon</a>
-                <a href="" class="headernav">Blog</a>
-            </div> 
-            </div>
-            
-            <div class="header-button">
-                <button class="contact-us">Contact us</button>
-            </div>
+                    <img src="Logo.png" alt="" class="logo">
+                    <div class="header-links">
+                        <a href="" class="header-nav">Home</a>
+                        <a href="" class="headernav">About us</a>
+                        <a href="" class="headernav">Sermon</a>
+                        <a href="" class="headernav">Blog</a>
+                    </div>
+                </div>
+                <div class="header-button">
+                    <button class="contact-us">Contact us</button>
+                </div>
             </div>
         </div>
     </header>
+
     <!-- Container 1 -->
     <div class="container1">
         <div class="container1-text1">
-             <h5>WELCOME TO OUR CHURCH</h5>
-            <p><h1>BECOME A PART OF <br>
-                 OUR COMMUNITY</h1></p>
-                 <button class="container1-btn">LEARN MORE</button>
+            <h5>WELCOME TO OUR CHURCH</h5>
+            <p>
+                <h1>BECOME A PART OF <br> OUR COMMUNITY</h1>
+            </p>
+            <button class="container1-btn">LEARN MORE</button>
         </div>
         <div class="container1-text2">
             <span style="color: #FFD2A4;">&#8212;</span>Lorem ipsum dolor sit amet, consectetur <br>
@@ -638,45 +732,58 @@ header a:hover::after {
     </div>
 
     <!-- Container 2 -->
-     <div class="container2">
+    <div class="container2">
         <div class="container2-top">
-            <h5>sub headline</h5>
-            <p><h2>a church that's relevant</h2></p>
+            <h5 class="light">sub headline</h5>
+            <p>
+                <h2>a church that's relevant</h2>
+            </p>
         </div>
         <div class="container2-bottom">
             <div class="wwd">
                 <img src="Icon 1.svg" alt="" class="cont2-img">
                 <h4>about us</h4>
-                <p><h6>Lorem ipsum dolor sit amet,<br>
+                <p>
+                    <h6>Lorem ipsum dolor sit amet,<br>
                         consectetur adipiscing elit, sed do <br>
                         eiusmod tempor incididunt ut labore et <br>
-                        dolore magna aliqua.</h6></p>
+                        dolore magna aliqua.
+                    </h6>
+                </p>
             </div>
             <div class="wwd">
                 <img src="Icon 2.svg" alt="" class="cont2-img">
                 <h4>get involved</h4>
-                <p><h6>Lorem ipsum dolor sit amet,<br>
+                <p>
+                    <h6>Lorem ipsum dolor sit amet,<br>
                         consectetur adipiscing elit, sed do <br>
                         eiusmod tempor incididunt ut labore et <br>
-                        dolore magna aliqua.</h6></p>
+                        dolore magna aliqua.
+                    </h6>
+                </p>
             </div>
             <div class="wwd">
                 <img src="Icon 3.svg" alt="" class="cont2-img">
                 <h4>giving back</h4>
-                <p><h6>Lorem ipsum dolor sit amet,<br>
+                <p>
+                    <h6>Lorem ipsum dolor sit amet,<br>
                         consectetur adipiscing elit, sed do <br>
                         eiusmod tempor incididunt ut labore et <br>
-                        dolore magna aliqua.</h6></p>
+                        dolore magna aliqua.
+                    </h6>
+                </p>
             </div>
         </div>
-     </div>    
+    </div>
 
     <!-- Container 3 -->
-     <div class="container3">
+    <div class="container3">
         <div class="container3-top">
             <span class="capital">
-                <h5>sub headline</h5>
-                <p><h2>love and compassion</h2></p>
+                <h6 class="light">sub headline</h6>
+                <p>
+                    <h2>love and compassion</h2>
+                </p>
             </span>
             <h6 class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br>
@@ -696,129 +803,149 @@ header a:hover::after {
                     <h3>celebrate with us</h3>
                 </span>
                 <h6 class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-                    incididunt ut labore et dolore magna aliqua.</h6>
-            </div>
+                    incididunt ut labore et dolore magna aliqua.
+                </h6>
             <div class="read-more-text">
                 <a href="#" class="read-more">Read More</a>
             </div>
-            
         </div>
-     </div>
+    </div>
 
     <!-- Container 4-->
-        <div class="container4">
-            <div class="cont4-top">
-                <h6>watch and listen</h6>
-                <h2>the benefits of <br>
-                    joining our church
-                </h2>
-            </div>
-            <div class="cont4-bottom">
-    <div class="cont4-imgs">
-        <div class="cont4-item">
-        <img src="cont4-img1.png" alt="" class="cont4-img">
-        <div class="caption-wrapper">
-            <div class="caption-block">
-            <div class="caption-text">watch and listen to <br>
-                                        our sermons</div><br>
-            <div class="more-text">Lorem ipsum dolor sit amet,<br>
-                                    consectetur adipiscing elit, sed do <br>
-                                    eiusmod tempor incididunt ut.</div>
-            </div>
+    <div class="container4">
+        <div class="cont4-top">
+            <h6>watch and listen</h6>
+            <h2>the benefits of <br> joining our church</h2>
         </div>
-        </div>
-
-        <div class="cont4-item">
-        <img src="cont4-img2.png" alt="" class="cont4-img">
-        <div class="caption-wrapper">
-            <div class="caption-block">
-            <div class="caption-text">watch and listen to <br>
-                                        our sermons</div><br>
-            <div class="more-text">Lorem ipsum dolor sit amet,<br>
-                                    consectetur adipiscing elit, sed do <br>
-                                    eiusmod tempor incididunt ut.</div>
-            </div>
-        </div>
-        </div>
-
-        <div class="cont4-item">
-        <img src="cont4-img3.png" alt="" class="cont4-img">
-        <div class="caption-wrapper">
-            <div class="caption-block">
-            <div class="caption-text">watch and listen to <br>
-                                        our sermons</div><br>
-            <div class="more-text">Lorem ipsum dolor sit amet,<br>
-                                    consectetur adipiscing elit, sed do <br>
-                                    eiusmod tempor incididunt ut.</div>
-            </div>
-        </div>
-        </div>
-
-            <div class="cont4-item">
-                <img src="cont4-img4.png" alt="" class="cont4-img">
-                <div class="caption-wrapper">
-                    <div class="caption-block">
-                        <div class="caption-text">watch and listen to <br>
-                                        our sermons</div><br>
+        <div class="cont4-bottom">
+            <div class="cont4-imgs">
+                <div class="cont4-item">
+                    <img src="cont4-img1.png" alt="" class="cont4-img">
+                    <div class="caption-wrapper">
+                        <div class="caption-block">
+                            <div class="caption-text">watch and listen to <br> our sermons</div><br>
                             <div class="more-text">Lorem ipsum dolor sit amet,<br>
-                                    consectetur adipiscing elit, sed do <br>
-                                    eiusmod tempor incididunt ut.</div>
+                                consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont4-item">
+                    <img src="cont4-img2.png" alt="" class="cont4-img">
+                    <div class="caption-wrapper">
+                        <div class="caption-block">
+                            <div class="caption-text">watch and listen to <br> our sermons</div><br>
+                            <div class="more-text">Lorem ipsum dolor sit amet,<br>
+                                consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont4-item">
+                    <img src="cont4-img3.png" alt="" class="cont4-img">
+                    <div class="caption-wrapper">
+                        <div class="caption-block">
+                            <div class="caption-text">watch and listen to <br> our sermons</div><br>
+                            <div class="more-text">Lorem ipsum dolor sit amet,<br>
+                                consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont4-item">
+                    <img src="cont4-img4.png" alt="" class="cont4-img">
+                    <div class="caption-wrapper">
+                        <div class="caption-block">
+                            <div class="caption-text">watch and listen to <br> our sermons</div><br>
+                            <div class="more-text">Lorem ipsum dolor sit amet,<br>
+                                consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- Container 5-->
-        <div class="container5">
-            <div class="cont5-top">
-                <h6>upcoming sermons</h6>
-                <h2>join us and become a part <br>
-                    of something great</h2>
-            </div>
-            <div class="cont5-bottom">
-                <div class="bottom-left">
-                    <div class="date">20 <br>
-                        <span class="july">JULY</span>
-                    </div>
-                    <div class="cont5-text">
-                        <h6><span class="upcoming">upcoming event</span></h6>
-                        <h5>watch and listen <br> to our sermons</h5>
-                        <h6 class="light1">Lorem ipsum dolor sit amet, consectetur <br>
-                             adipiscing elit, sed do eiusmod tempor.</h6>
-                    </div>
-                    <div class="cont5-daa">
-                        <div class="daa-top">
-                            <div><img src="Clock icon.svg" alt=""></div>
-                            <div class="daa-text">
-                                  <h6>Friday 23:39 IST</h6>
-                                  <h6>Saturday 11:20 ISD</h6>
-                            </div>
-                        </div>
-                        <div class="daa-bottom">
-                            <div><img src="Search icon.svg" alt=""></div>
-                                    <div class="daa-text">
-                                        <h6>No 233 Main St. New York</h6>
-                                        <h6>United States</h6>
-                                    </div>
-                                    
-                </div>
-                                </div>
-                                <div class="cont5-btn">
-                                        <button class="cont5-button">
-                                            register
-                                        </button>
-                             </div>
-                        </div>
-                            <div class="bottom-right">
-                                    <img src="cont5-img.png" alt="">
-                            </div>
-                
-                        </div>
+    <div class="container5">
+        <div class="cont5-top">
+            <h6>upcoming sermons</h6>
+            <h2>join us and become a part <br> of something great</h2>
         </div>
-                    
-        
+        <div class="cont5-bottom">
+            <div class="bottom-left">
+                <div class="date">
+                    20 <br>
+                    <span class="july">JULY</span>
+                </div>
+                <div class="cont5-text">
+                    <h6><span class="upcoming">upcoming event</span></h6>
+                    <h5>watch and listen <br> to our sermons</h5>
+                    <h6 class="light1">Lorem ipsum dolor sit amet, consectetur <br>
+                        adipiscing elit, sed do eiusmod tempor.
+                    </h6>
+                </div>
+                <div class="cont5-daa">
+                    <div class="daa-top">
+                        <div>
+                            <img src="Clock icon.svg" alt="">
+                        </div>
+                        <div class="daa-text">
+                            <h6>Friday 23:39 IST</h6>
+                            <h6>Saturday 11:20 ISD</h6>
+                        </div>
+                    </div>
+                    <div class="daa-bottom">
+                        <div>
+                            <img src="Search icon.svg" alt="">
+                        </div>
+                        <div class="daa-text">
+                            <h6>No 233 Main St. New York</h6>
+                            <h6>United States</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont5-btn">
+                    <button class="cont5-button">
+                        register
+                    </button>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <img src="cont5-img.png" alt="">
+            </div>
+        </div>
+        <div class="view">
+            <a href="#" class="read-more">View All Sermons</a>
+        </div>
+    </div>
 
+    <!-- Container 6-->
+     <div class="container6">
+        <div class="cont6-div">
+            <div class="div-left">
+                <h4>
+                    we want to <br>
+                    serve the world <br>
+                    around us
+                </h4>
+                <h6 class="light">
+                    Lorem ipsum dolor sit amet, consectetur <br>
+                    adipiscing elit, sed do.
+                </h6>
+                <div class="visit-btn">
+                    <button class="visit">visit</button>
+                </div>
+            </div>
+            <div class="div-right">
+                <img src="Quote icon.svg" alt="" class="quote">
+            </div>
+        </div>
+     </div>
 </body>
 </html>
