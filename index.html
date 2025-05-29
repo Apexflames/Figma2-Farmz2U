@@ -29,9 +29,9 @@
         font-size: 64px;
     }
     button:hover {
-  background-color: #ffc888; 
+  background-color: #F2C79B; 
   transform: scale(1.05);     
-  transition: all 0.3s ease;  
+  transition: all 0.3s ease-in-out;  
 }
 
     /* Header */
@@ -595,8 +595,8 @@ header a:hover::after {
     text-transform: uppercase;
 }
 .container5 .cont5-button:hover {
-    background-color: #FFD2A4; 
-    color: black;
+    background-color: black;
+    color: white;
     transform: scale(1.05);     
     transition: all 0.3s ease-in-out;
     }
@@ -619,16 +619,10 @@ header a:hover::after {
     height: 750px;
     max-width: 1200px;
     margin: 50px auto;
-    background-image: linear-gradient(
-      0deg,
-      rgba(205, 84, 35, 0.4),
-      rgba(255, 208, 160, 1)
-    ),
-    url('Container6-background.svg');
-    background-size: cover;
+    background-image:     url('Container6-background.svg');
+    background-size: cover 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
+    background-position: center ;
     background-blend-mode: soft-light;
 
 }
@@ -639,7 +633,7 @@ header a:hover::after {
     align-items: center;
     width: 70%;
     max-width: 1200px;
-    padding: 50px 0px;
+    padding: 20px 0px;
     background-color: white;
     column-gap: 50px;
     margin: 0 auto;
@@ -694,6 +688,76 @@ header a:hover::after {
     justify-content: center;
     align-items: center;
     padding-right: 70px;
+}
+
+/* Container 7 */
+.container7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.cont7-top {
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+.cont7-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    column-gap: 20px;
+    padding: 0 50px 50px;
+}
+.cont7-divs {
+    width: 100%;
+    padding: 10px 0 10px 30px;
+    background-color: #FFF5EB;
+    margin: 0 auto;
+    border-bottom: 10px solid transparent;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.cont7-divs h6 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 50px;
+}
+.cont7-divs h6.capital {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 8%;
+    background: linear-gradient(90deg, #A54E2B, #DC9853);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}   
+.cont7-divs h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+    margin: -20px auto;
+}
+.base {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -20px;
+    line-height: 16px;
+}
+.cont7-divs:hover{
+    border-bottom: #F2C79B 10px solid;    
 }
 </style>
 <body>   
@@ -947,5 +1011,85 @@ header a:hover::after {
             </div>
         </div>
      </div>
+     <!-- Container 7-->
+      <div class="container7">
+        <div class="cont7-top">
+            <h6 class="light">read our blog</h6>
+            <h2>share, inspire, innovate</h2>
+        </div>
+        <div class="cont7-bottom">
+            <div class="cont7-divs">
+                <h6 class="capital">relationship</h6>
+                <h4 class="capital">watch and listen <br>
+                    to our sermons
+                </h4>
+                <h6>Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit, sed do <br>
+                    eiusmod tempor incididunt ut.
+                </h6>
+                <div class="base">
+                    <h6>By Mattew Johnson <br>
+                    Tuesday 13 May, 2021</h6>
+                </div>
+            </div>
+            <div class="cont7-divs">
+                <h6 class="capital">relationship</h6>
+                <h4 class="capital">watch and listen <br>
+                    to our sermons
+                </h4>
+                <h6>Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit, sed do <br>
+                    eiusmod tempor incididunt ut.
+                </h6>
+                <div class="base">
+                    <h6>By Mattew Johnson <br>
+                    Tuesday 13 May, 2021</h6>
+                </div>
+            </div>
+            <div class="cont7-divs">
+                <h6 class="capital">relationship</h6>
+                <h4 class="capital">watch and listen <br>
+                    to our sermons
+                </h4>
+                <h6>Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit, sed do <br>
+                    eiusmod tempor incididunt ut.
+                </h6>
+                <div class="base">
+                    <h6>By Mattew Johnson <br>
+                    Tuesday 13 May, 2021</h6>
+                </div>
+            </div>
+            <div class="cont7-divs">
+                <h6 class="capital">relationship</h6>
+                <h4 class="capital">watch and listen <br>
+                    to our sermons
+                </h4>
+                <h6>Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit, sed do <br>
+                    eiusmod tempor incididunt ut.
+                </h6>
+                <div class="base">
+                    <h6>By Mattew Johnson <br>
+                    Tuesday 13 May, 2021</h6>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="footer-wrap">
+                    <div class="footer-left">
+                        <img src="Logo.png" alt="" class="logo">
+                        <p>© 2023 Your Church Name. All rights reserved.</p>
+                    </div>
+                    <div class="footer-right">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
 </body>
 </html>
