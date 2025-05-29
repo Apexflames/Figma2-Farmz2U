@@ -759,6 +759,173 @@ header a:hover::after {
 .cont7-divs:hover{
     border-bottom: #F2C79B 10px solid;    
 }
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    padding: 50px 0 0 100px;
+    margin: 0 auto;
+    column-gap: 50px;
+}
+.footer-links{
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: -20px;
+}
+.footer-lists {
+    align-items: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 40px;
+    padding-bottom: 50px;
+}
+.footer-lists h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 5px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+.footer-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0;
+    width: 400px;
+}
+.footer-logo {
+    width: 140px;
+    margin: 0 0 10px;
+}
+.footer-col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    column-gap: 50px;
+}
+
+.footer-col2 li {
+    list-style: none;
+    margin: 5px 0;
+    text-decoration: none;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.footer-left .footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.footer-left .footer-link:hover {
+    color: #FFD2A4;
+    text-decoration: underline;
+}
+footer a.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: -40px;
+    opacity: 80%;
+}
+.footer-right .footer-links2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin: -20px 0 0 -35px;
+}
+.footer-col3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -1%;
+    line-height: 44px;
+    margin: -130px 0 0 50px;
+    width: 500px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border: solid 1px white;
+    border-radius: 12px;
+
+}
+.newsletter input {
+    display: flex;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    color: white;
+    padding: 0 20px;
+    outline: none;
+}
+.newsletter input::placeholder {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0%;
+    padding: 5px 20px;
+    opacity: 80%;
+}
+.newsletter button {
+  background: #FFD2A4;
+  border: solid 4px #FFD2A4;
+  border-radius: 12px;
+  color: black;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 24px 64px;
+  text-align: center;
+}
+.newsletter button:hover {
+  background: #F2C79B;
+  border: solid 4px #F2C79B;
+  transform: scale(1.02);}
 </style>
 <body>   
     <header>
@@ -1081,13 +1248,43 @@ header a:hover::after {
         <footer>
             <div class="footer">
                 <div class="footer-wrap">
-                    <div class="footer-left">
-                        <img src="Logo.png" alt="" class="logo">
-                        <p>© 2023 Your Church Name. All rights reserved.</p>
+                    <div class="footer-col1">
+                        <img src="footer-logo.svg" alt="" class="footer-logo">
+                        <div class="footer-lists">
+                            <p>© copyright finsweet 2022</p><br>
+                            <h6>(480) 555-0103</h6>
+                            <h6>4517 washington ave.</h6>
+                            <h6>finsweet@example.com</h6>
+                        </div>
                     </div>
-                    <div class="footer-right">
-                        <a href="#" class="footer-link">Privacy Policy</a>
-                        <a href="#" class="footer-link">Terms of Service</a>
+                    <div class="footer-col2">
+                        <div class="footer-left">
+                            <h5>Quicklinks</h5>
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-link">about us</a></li>
+                                <li><a href="#" class="footer-link">sermons</a></li>
+                                <li><a href="#" class="footer-link">events</a></li>
+                                <li><a href="#" class="footer-link">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-right">
+                            <h5>Connect</h5>
+                            <ul class="footer-links2">
+                                <li><a href="#" ><img src="facebook-img.svg" alt=""></a></li>
+                                <li><a href="#"><img src="Linkedin.svg" alt=""></a></li>
+                                <li><a href="#"><img src="twitter-img.svg" alt=""></a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col3">
+                        <h4>subscribe to get the latest <br>
+                            updates and news
+                        </h4>
+                        <div class="footer-bottom">
+                            <form class="newsletter">
+                            <input type="email" placeholder="Yourmail@gmail.com" />
+                            <button type="submit">SUBSCRIBE</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
