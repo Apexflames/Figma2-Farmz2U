@@ -129,7 +129,26 @@ header a:hover {
 header a:hover::after {
   width: 100%;
 }
-/* Container 5 */
+/* Container 1*/
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    max-width: 1200px;
+    background: url(sermon-header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cont1-text{
+    margin-left: 100px;
+    text-transform: uppercase;
+}
+/* Container 2 */
 .container2 {
     justify-content: center;
     align-items: center;
@@ -401,15 +420,210 @@ header a:hover::after {
     text-transform: uppercase;
     margin: -20px auto;
 }
+
 .base {
     flex-wrap: wrap;
     align-items: center;
-    margin-top: -20px;
+    margin-top: 0px;
     line-height: 16px;
 }
 .cont3-divs:hover{
     border-bottom: #F2C79B 10px solid;    
 }
+.base-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    line-height: 0%;
+}
+.base-text {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0%;
+    line-height: 1.1;
+    margin-top: 10px;
+}
+.base-text h6 {
+    margin: 0;
+    padding: 0;
+}
+.base-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    line-height: 0%;
+    margin: 20px 0 50px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 100px auto;
+    margin: 50px auto;
+    column-gap: 0px;
+}
+.footer-links{
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: -20px;
+}
+.footer-lists {
+    align-items: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 40px;
+    padding-bottom: 50px;
+}
+.footer-lists h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 5px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+.footer-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0;
+    width: 400px;
+}
+.footer-logo {
+    width: 140px;
+    margin: 0 0 10px;
+}
+.footer-col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    column-gap: 50px;
+}
+
+.footer-col2 li {
+    list-style: none;
+    margin: 5px 0;
+    text-decoration: none;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.footer-left .footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.footer-left .footer-link:hover {
+    color: #FFD2A4;
+    text-decoration: underline;
+}
+footer a.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: -40px;
+    opacity: 80%;
+}
+.footer-right .footer-links2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin: -20px 0 0 -35px;
+}
+.footer-col3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -1%;
+    line-height: 44px;
+    margin: -130px 0 0 50px;
+    width: 500px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border: solid 1px white;
+    border-radius: 12px;
+    max-width: 100%;
+
+}
+.newsletter input {
+    display: flex;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    color: white;
+    padding: 0 20px;
+    outline: none;
+}
+.newsletter input::placeholder {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0%;
+    padding: 5px 20px;
+    opacity: 80%;
+}
+.newsletter button {
+  background: #FFD2A4;
+  border: solid 4px #FFD2A4;
+  border-radius: 12px;
+  color: black;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 24px 64px;
+  text-align: center;
+}
+.newsletter button:hover {
+  background: #F2C79B;
+  border: solid 4px #F2C79B;
+  transform: scale(1.02);}
 
 </style>
 <body>
@@ -436,8 +650,8 @@ header a:hover::after {
     <!--Container1-->
     <div class="container1">
         <div class="cont1-text">
-            <h6>Our Sermons</h6>
-            <h2>Explore Our Sermons</h2>
+            <h6>Sermon</h6>
+            <h2>take part in Our Sermon</h2>
         </div>
     </div>
 
@@ -506,12 +720,27 @@ header a:hover::after {
                     of kindness
                 </h4>
                 <h6>Lorem ipsum dolor sit amet,<br>
-                    consectetur adipiscing elit, sed do <br>
-                    eiusmod tempor incididunt ut.
+                    consectetur adipiscing elit
                 </h6>
                 <div class="base">
-                    <h6>By Mattew Johnson <br>
-                    Tuesday 13 May, 2021</h6>
+                    <div class="base-top">
+                        <div>
+                            <img src="Clock icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>Friday 23:39 IST</h6>
+                            <h6>Saturday 11:20 ISD</h6>
+                        </div>
+                    </div>
+                    <div class="base-bottom">
+                        <div>
+                            <img src="Search icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>No 233 Main St. New York</h6>
+                            <h6>United States</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="cont3-divs">
@@ -523,8 +752,24 @@ header a:hover::after {
                     consectetur adipiscing elit
                 </h6>
                 <div class="base">
-                    <h6>By Mattew Johnson <br>
-                    Tuesday 13 May, 2021</h6>
+                    <div class="base-top">
+                        <div>
+                            <img src="Clock icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>Friday 23:39 IST</h6>
+                            <h6>Saturday 11:20 ISD</h6>
+                        </div>
+                    </div>
+                    <div class="base-bottom">
+                        <div>
+                            <img src="Search icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>No 233 Main St. New York</h6>
+                            <h6>United States</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="cont3-divs">
@@ -536,8 +781,24 @@ header a:hover::after {
                     consectetur adipiscing elit
                 </h6>
                 <div class="base">
-                    <h6>By Mattew Johnson <br>
-                    Tuesday 13 May, 2021</h6>
+                    <div class="base-top">
+                        <div>
+                            <img src="Clock icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>Friday 23:39 IST</h6>
+                            <h6>Saturday 11:20 ISD</h6>
+                        </div>
+                    </div>
+                    <div class="base-bottom">
+                        <div>
+                            <img src="Search icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>No 233 Main St. New York</h6>
+                            <h6>United States</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="cont3-divs">
@@ -549,12 +810,73 @@ header a:hover::after {
                     consectetur adipiscing elit
                 </h6>
                 <div class="base">
-                    <h6>By Mattew Johnson <br>
-                    Tuesday 13 May, 2021</h6>
+                    <div class="base-top">
+                        <div>
+                            <img src="Clock icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>Friday 23:39 IST</h6>
+                            <h6>Saturday 11:20 ISD</h6>
+                        </div>
+                    </div>
+                    <div class="base-bottom">
+                        <div>
+                            <img src="Search icon.svg" alt="">
+                        </div>
+                        <div class="base-text">
+                            <h6>No 233 Main St. New York</h6>
+                            <h6>United States</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
       </div>
+
+
+      <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="footer-wrap">
+                    <div class="footer-col1">
+                        <img src="footer-logo.svg" alt="" class="footer-logo">
+                        <div class="footer-lists">
+                            <p>© copyright finsweet 2022</p><br>
+                            <h6>(480) 555-0103</h6>
+                            <h6>4517 washington ave.</h6>
+                            <h6>finsweet@example.com</h6>
+                        </div>
+                    </div>
+                    <div class="footer-col2">
+                        <div class="footer-left">
+                            <h5>Quicklinks</h5>
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-link">about us</a></li>
+                                <li><a href="#" class="footer-link">sermons</a></li>
+                                <li><a href="#" class="footer-link">events</a></li>
+                                <li><a href="#" class="footer-link">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-right">
+                            <h5>Connect</h5>
+                            <ul class="footer-links2">
+                                <li><a href="#" ><img src="facebook-img.svg" alt=""></a></li>
+                                <li><a href="#"><img src="Linkedin.svg" alt=""></a></li>
+                                <li><a href="#"><img src="twitter-img.svg" alt=""></a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col3">
+                        <h4>subscribe to get the latest <br>
+                            updates and news
+                        </h4>
+                        <div class="footer-bottom">
+                            <form class="newsletter">
+                            <input type="email" placeholder="Yourmail@gmail.com" />
+                            <button type="submit">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
 </body>
 </html>
