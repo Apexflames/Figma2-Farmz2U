@@ -40,7 +40,6 @@
     align-items: center;
     background-color: #0D0D0D;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 
 }
@@ -48,6 +47,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
     padding: 0 100px;
 }
@@ -138,15 +139,17 @@ header a:hover::after {
     margin: 0 auto;
     width: 100%;
     height: 400px;
-    max-width: 1200px;
     background: url(sermon-header.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .cont1-text{
-    margin-left: 100px;
     text-transform: uppercase;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
 }
 /* Container 2 */
 .container2 {
@@ -475,19 +478,26 @@ footer {
 .footer-wrap {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     max-width: 1200px;
     padding: 100px auto;
     margin: 50px auto;
-    column-gap: 0px;
+    column-gap: 170px; /* Increased gap for more space between columns */
+}
+.footer-col2-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
 .footer-links{
     justify-content: center;
     align-items: center;
     column-gap: 50px;
-    margin-top: -20px;
 }
 .footer-lists {
     align-items: center;
@@ -521,20 +531,32 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: start;
     width: 100%;
     height: 100%;
     column-gap: 50px;
+    margin-top: 5px;
 }
 
 .footer-col2 li {
     list-style: none;
-    margin: 5px 0;
+    margin: 20px 0;
     text-decoration: none;
 }
 .footer-left {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
+}
+.footer-left h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.footer-left ul, li {
+    margin-top: 0px;
+    padding-top: 0px;
 }
 .footer-left .footer-link {
     color: white;
@@ -548,23 +570,52 @@ footer {
     color: #FFD2A4;
     text-decoration: underline;
 }
-footer a.footer-link {
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+    row-gap: 0;
+}
+
+.footer-links li {
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-link {
     color: white;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    margin-left: -40px;
     opacity: 80%;
+    display: block;
+    padding: 0;
+    margin: 0;
 }
-.footer-right .footer-links2 {
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    column-gap: 10px;
+}
+.footer-right h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -1%;
+}
+.footer-links2 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 10px;
-    margin: -20px 0 0 -35px;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 .footer-col3 {
     display: flex;
@@ -573,10 +624,10 @@ footer a.footer-link {
     align-items: flex-start;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: -1%;
     line-height: 44px;
-    margin: -130px 0 0 50px;
+    margin: 0px 0 0 50px;
     width: 500px;
 }
 .newsletter {
@@ -587,7 +638,6 @@ footer a.footer-link {
     border: solid 1px white;
     border-radius: 12px;
     max-width: 100%;
-
 }
 .newsletter input {
     display: flex;
@@ -596,8 +646,8 @@ footer a.footer-link {
     border: none;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 70px;
+    width: 380px;
+    height: 48px; 
     color: white;
     padding: 0 20px;
     outline: none;
@@ -847,7 +897,8 @@ footer a.footer-link {
                             <h6>finsweet@example.com</h6>
                         </div>
                     </div>
-                    <div class="footer-col2">
+                    <div class="footer-col2-main">
+                        <div class="footer-col2">
                         <div class="footer-left">
                             <h5>Quicklinks</h5>
                             <ul class="footer-links">
@@ -861,14 +912,14 @@ footer a.footer-link {
                             <h5>Connect</h5>
                             <ul class="footer-links2">
                                 <li><a href="#" ><img src="facebook-img.svg" alt=""></a></li>
-                                <li><a href="#"><img src="Linkedin.svg" alt=""></a></li>
                                 <li><a href="#"><img src="twitter-img.svg" alt=""></a></li>
+                                <li><a href="#"><img src="Linkedin.svg" alt=""></a></li>
                             </ul>
                     </div>
                     <div class="footer-col3">
-                        <h4>subscribe to get the latest <br>
+                        <h5>subscribe to get the latest <br>
                             updates and news
-                        </h4>
+                        </h5>
                         <div class="footer-bottom">
                             <form class="newsletter">
                             <input type="email" placeholder="Yourmail@gmail.com" />
@@ -877,6 +928,7 @@ footer a.footer-link {
                         </div>
                     </div>
                 </div>
-
+            </div>
+    </footer>
 </body>
 </html>
