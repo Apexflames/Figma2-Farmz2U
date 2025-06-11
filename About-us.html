@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+  }   
+  h6 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+    h3 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    button:hover {
+  background-color: #F2C79B; 
+  transform: scale(1.05);     
+  transition: all 0.3s ease-in-out;  
+}
+
+    /* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.logo
+{
+    width: 100px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    height: 80px;
+    padding-left: 50px;
+    }
+    .contact-us {
+        background-color: #FFD2A4;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-justify: center;
+        text-align: center;
+        cursor: pointer;
+        padding: 20px 20px;
+        border-radius: 10px;
+        width: 180px;
+        height: 56px;
+        text-transform: uppercase;
+
+    }
+header a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+header a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px; 
+  width: 0%;
+  height: 2px;
+  background-color: #FFD2A4;
+  transition: width 0.3s ease;
+}
+
+header a:hover {
+  color: #FFD2A4;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+/*header-img*/
+.header-img{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url(about-us-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    text-transform: uppercase;
+    height: 420px;
+}
+.header-imgtext {
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    padding-top: 130px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.header-img h6,
+.header-img h2 {
+    margin: 0 auto;
+    gap: 20px;
+    line-height: 80px;
+    padding-left: 100px;
+    width: 100%;
+    max-width: 1200px;
+    }
+
+/*container1*/
+.container1{
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    justify-content: center;
+    align-items: center;
+}
+.cont1-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 24px;
+}
+.cont1-top .bold{
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.cont1-top h2{
+    margin: 50px auto 0;
+    text-transform: uppercase;
+}
+.light{
+    font-weight: 300;
+    font-size: 16px;
+    margin: 50px auto 0;
+    opacity: 50%;
+}
+.cont1-middle{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.img-type1{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.img-type2{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 32px;
+}
+.cont1-bottom{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    text-align: left;
+}
+.cont1-bottom h4{
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.bold{
+    text-transform: uppercase;
+    margin: 0 auto 20px;
+}
+.cont1-bottom .light{
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/*Container2*/
+.container2{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 100px auto 0;
+    justify-content: center;
+    align-items: center;
+}
+.cont2-top{
+    text-transform: uppercase;
+    text-align: center;
+}
+.cont-2-middle{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: 100px;
+}
+.cont-2-middle img{
+    width: 500px;
+    height: 350px;
+    object-position: top right;
+    object-fit: cover;
+}
+.cont-2-middle h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.cont-2-middle h6{
+    margin-top: 0;
+    font-size: 16;
+    font-weight: 300;
+    line-height: 24px;
+}
+.cont2-type1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.cont2-type2{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.middle-text h6{
+    opacity: 50%;
+    font-weight: 300;
+    font-size: 16px;
+}
+/*Container3*/
+.container3{
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont3-top1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cont3-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.cont3-divs{
+    width: 270px;
+    height: 350px;
+    background-color: #F5F2F0;
+    display: flex;
+    flex-direction: column;
+}
+.cont3-divs>img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 30px auto 0;
+    border: solid 5px white;
+}
+.cont3-divs h5{
+    margin: 20px auto 10px;
+    padding-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.cont3-divs h6{
+    text-align: center;
+    margin: 0 auto;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin: 20px auto;
+}
+.logos img {
+    filter: brightness(0) saturate(100%);
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0D0D0D;
+    color: white;
+    width: 100%;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding: 100px auto;
+    margin: 50px auto;
+    column-gap: 140px;
+    }
+.footer-col2-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.footer-links{
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+.footer-lists {
+    align-items: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 40px;
+    padding-bottom: 50px;
+    width: max-content;
+}
+.footer-lists h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 5px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+.footer-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0;
+    width: 500px;
+}
+.footer-logo {
+    width: 140px;
+    margin: 0 0 10px;
+}
+.footer-col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    column-gap: 50px;
+    margin-top: 5px;
+}
+
+.footer-col2 li {
+    list-style: none;
+    margin: 20px 0;
+    text-decoration: none;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer-left h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.footer-left ul, li {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.footer-left .footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.footer-left .footer-link:hover {
+    color: #FFD2A4;
+    text-decoration: underline;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+    row-gap: 0;
+}
+
+.footer-links li {
+    margin: 14px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    opacity: 80%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    column-gap: 10px;
+}
+.footer-right h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -1%;
+}
+.footer-links2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.footer-col3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1%;
+    line-height: 44px;
+    margin: 0px 0 0 50px;
+    width: 500px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border: solid 1px white;
+    border-radius: 12px;
+    max-width: 100%;
+}
+.newsletter input {
+    display: flex;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 48px; 
+    color: white;
+    padding: 0 20px;
+    outline: none;
+}
+.newsletter input::placeholder {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0%;
+    padding: 5px 20px;
+    opacity: 80%;
+}
+.newsletter button {
+  background: #FFD2A4;
+  border: solid 4px #FFD2A4;
+  border-radius: 12px;
+  color: black;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 24px 64px;
+  text-align: center;
+}
+.newsletter button:hover {
+  background: #F2C79B;
+  border: solid 4px #F2C79B;
+  transform: scale(1.02);}
+</style>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <img src="Logo.png" alt="" class="logo">
+                    <div class="header-links">
+                        <a href="index.html" class="header-nav">Home</a>
+                        <a href="About-us.html" class="headernav">About us</a>
+                        <a href="Sermons.html" class="headernav">Sermon</a>
+                        <a href="blog.html" class="headernav">Blog</a>
+                    </div>
+                </div>
+                <div class="header-button">
+                    <button class="contact-us">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="header-img">
+            <div class="header-imgtext">
+                <h6>about us</h6>
+                <h2>serving the world around us</h2>
+            </div>
+            
+        </div>
+    </header>
+    <div class="container1">
+        <div class="cont1-top">
+            <h6 class="bold">welcome to our church</h6>
+            <h2>love and compassion</h2>
+            <h6 class="light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna <br>
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+            </h6>
+        </div>
+        <div class="cont1-middle">
+            <img src="about-us-cont2-img1.png" alt="" class="img-type1">
+            <img src="about-us-cont2-img2.png" alt="" class="img-type2">
+            <img src="about-us-cont2-img3.png" alt="" class="img-type1">
+        </div>
+        <div class="cont1-bottom">
+            <div class="con1-bottom-right">
+                <h6 class="bold">Our mission & vision</h6>
+                <h4>striving for a better <br>
+                    tomorrow
+                </h4>
+                <h6 class="light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                    sed do eiusmod tempor incididunt ut labore et dolore <br>
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+                    consequat. Duis aute irure dolor in reprehenderit in <br>
+                    voluptate velit esse cillum.
+                </h6>
+            </div>
+            <div class="cont1-bottom-left">
+                <h6 class="bold">what we do</h6>
+                <h4>bringing peace and joy<br>
+                    to the world
+                </h4>
+                <h6 class="light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                    sed do eiusmod tempor incididunt ut labore et dolore <br>
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+                    consequat. Duis aute irure dolor in reprehenderit in <br>
+                    voluptate velit esse cillum.
+                </h6>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="cont2-top">
+            <h6>benefits</h6>
+            <h2>
+                the benefits of <br>
+                joining our church
+            </h2>
+        </div>
+        <div class="cont-2-middle">
+            <div class="cont2-type1">
+                <div class="middle-text">
+                    <h4>find fufilment and joy</h4>
+                    <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+                        consequat. Duis aute irure dolor in reprehenderit.
+                    </h6>
+                </div>
+                <div class="middle-img"><img src="about-us-cont2-middle-img1.png" alt=""></div>
+            </div>
+            <div class="cont2-type2">
+                 <div class="middle-text">
+                    <h4>shard values</h4>
+                    <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+                        consequat. Duis aute irure dolor in reprehenderit.
+                    </h6>
+                 </div>
+                <div class="middle-img"><img src="about-us-cont2-middle-img2.png" alt=""></div>
+            </div>
+            <div class="cont2-type1">
+                 <div class="middle-text">
+                    <h4>charity events</h4>
+                    <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+                        consequat. Duis aute irure dolor in reprehenderit.
+                    </h6>
+                 </div>
+                <div class="middle-img"><img src="about-us-cont2-middle-img3.png" alt=""></div>
+            </div>
+            <div class="cont2-type2">
+                 <div class="middle-text">
+                    <h4>all are welcome</h4>
+                    <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+                        consequat. Duis aute irure dolor in reprehenderit.
+                    </h6>
+                 </div>
+                <div class="middle-img"><img src="about-us-cont2-middle-img4.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="cont3-top1">
+            <h6>church members</h6>
+            <h2>meet our inspirational team</h2>
+        </div>
+        <div class="cont3-bottom">
+            <div class="cont3-divs">
+                <img src="about-us-img1.png" alt="">
+                <div class="div-text3">
+                    <h5>kim bowen</h5>
+                    <h6 class="light">Pastor, Church</h6>
+                    <div class="logos">
+                        <img src="facebook-img.svg" alt="" class="cont3-logos">
+                        <img src="twitter-img.svg" alt="" class="cont3-logos">
+                        <img src="Linkedin.svg" alt="" class="cont3-logos">
+                    </div>
+                </div>
+            </div>
+            <div class="cont3-divs">
+                <img src="about-us-img2.png" alt="">
+                <div class="div-text3">
+                    <h5>Danielle Watkins</h5>
+                    <h6 class="light">Pastor, Church</h6>
+                    <div class="logos">
+                        <img src="facebook-img.svg" alt="" class="cont3-logos">
+                        <img src="twitter-img.svg" alt="" class="cont3-logos">
+                        <img src="Linkedin.svg" alt="" class="cont3-logos">
+                    </div>
+                </div>
+            </div>
+            <div class="cont3-divs">
+                <img src="about-us-img3.png" alt="">
+                <div class="div-text3">
+                    <h5>naomi craige</h5>
+                    <h6 class="light">Pastor, Church</h6>
+                    <div class="logos">
+                        <img src="facebook-img.svg" alt="" class="cont3-logos">
+                        <img src="twitter-img.svg" alt="" class="cont3-logos">
+                        <img src="Linkedin.svg" alt="" class="cont3-logos">
+                    </div>
+                </div>
+            </div>
+            <div class="cont3-divs">
+                <img src="about-us-img4.png" alt="">
+                <div class="div-text3">
+                    <h5>santos payne</h5>
+                    <h6 class="light">Pastor, church</h6>
+                    <div class="logos">
+                        <img src="facebook-img.svg" alt="" class="cont3-logos">
+                        <img src="twitter-img.svg" alt="" class="cont3-logos">
+                        <img src="Linkedin.svg" alt="" class="cont3-logos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+            <div class="footer">
+                <div class="footer-wrap">
+                    <div class="footer-col1">
+                        <img src="footer-logo.svg" alt="" class="footer-logo">
+                        <div class="footer-lists">
+                            <p>© copyright finsweet 2022</p><br>
+                            <h6>(480) 555-0103</h6>
+                            <h6>4517 washington ave.</h6>
+                            <h6>finsweet@example.com</h6>
+                        </div>
+                    </div>
+                    <div class="footer-col2-main">
+                        <div class="footer-col2">
+                        <div class="footer-left">
+                            <h5>Quicklinks</h5>
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-link">about us</a></li>
+                                <li><a href="Sermons.html" class="footer-link">sermons</a></li>
+                                <li><a href="#" class="footer-link">events</a></li>
+                                <li><a href="blog.html" class="footer-link">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-right">
+                            <h5>Connect</h5>
+                            <ul class="footer-links2">
+                                <li><a href="#" ><img src="facebook-img.svg" alt=""></a></li>
+                                <li><a href="#"><img src="twitter-img.svg" alt=""></a></li>
+                                <li><a href="#"><img src="Linkedin.svg" alt=""></a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col3">
+                        <h5>subscribe to get the latest <br>
+                            updates and news
+                        </h5>
+                        <div class="footer-bottom">
+                            <form class="newsletter">
+                            <input type="email" placeholder="Yourmail@gmail.com" />
+                            <button type="submit">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
